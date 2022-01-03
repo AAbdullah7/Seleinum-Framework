@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [nopcommerce Regression Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="broswer" value="chrome"/>
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="TestCase.AddProductToCompareTest">
+        <methods>
+          <include name="UserCanClearCompare"/>
+          <include name="StopDriver"/>
+          <include name="ScreenShoutOnFailure"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- TestCase.AddProductToCompareTest -->
+      <class name="TestCase.AddProductToShoppingCartTest">
+        <methods>
+          <include name="UserCanAddProductToCart"/>
+          <include name="UserCanRemoveProductFromCart"/>
+          <include name="StopDriver"/>
+          <include name="ScreenShoutOnFailure"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- TestCase.AddProductToShoppingCartTest -->
+      <class name="TestCase.MyAccountTest">
+        <methods>
+          <include name="UserCanRegister"/>
+          <include name="StopDriver"/>
+          <include name="UserCanChangePassword"/>
+          <include name="RegisterUserCanLogout"/>
+          <include name="ScreenShoutOnFailure"/>
+          <include name="StartDriver"/>
+          <include name="RegisterUserCanLogin"/>
+        </methods>
+      </class> <!-- TestCase.MyAccountTest -->
+      <class name="TestCase.EmailFriendTest">
+        <methods>
+          <include name="RegisterUserCanLogout"/>
+          <include name="UserCanMailFriend"/>
+          <include name="StopDriver"/>
+          <include name="ScreenShoutOnFailure"/>
+          <include name="StartDriver"/>
+          <include name="RegisterUserCanLogin"/>
+        </methods>
+      </class> <!-- TestCase.EmailFriendTest -->
+      <class name="TestCase.AddProductReviewTest">
+        <methods>
+          <include name="StopDriver"/>
+          <include name="UserCanRegister"/>
+          <include name="ScreenShoutOnFailure"/>
+          <include name="UserCanAddProductReview"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- TestCase.AddProductReviewTest -->
+      <class name="TestCase.UserCanCheckOutTest">
+        <methods>
+          <include name="StopDriver"/>
+          <include name="UserCanAddProductToCart"/>
+          <include name="ScreenShoutOnFailure"/>
+          <include name="UserCanLogOut"/>
+          <include name="StartDriver"/>
+          <include name="UserCanCheckOut"/>
+        </methods>
+      </class> <!-- TestCase.UserCanCheckOutTest -->
+      <class name="TestCase.UserRegisterationTest">
+        <methods>
+          <include name="RegisterUserCanLogout"/>
+          <include name="StopDriver"/>
+          <include name="RegisterUserCanLogin"/>
+          <include name="UserCanRegister"/>
+          <include name="ScreenShoutOnFailure"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- TestCase.UserRegisterationTest -->
+      <class name="TestCase.AddProductToWishListTest">
+        <methods>
+          <include name="StopDriver"/>
+          <include name="UserCanAddProductForWishList"/>
+          <include name="UserCanRemoveProductFromCart"/>
+          <include name="ScreenShoutOnFailure"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- TestCase.AddProductToWishListTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [nopcommerce Regression Suite] -->
